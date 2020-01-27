@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2F4F2F9C23DF906100957338 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F2F9B23DF906100957338 /* main.swift */; };
+		2F4F2FA423DF907D00957338 /* PackageEtherCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 2F4F2FA323DF907D00957338 /* PackageEtherCapture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4F2FA423DF907D00957338 /* PackageEtherCapture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = PackageEtherCaptureDemo;
+			packageProductDependencies = (
+				2F4F2FA323DF907D00957338 /* PackageEtherCapture */,
+			);
 			productName = PackageEtherCaptureDemo;
 			productReference = 2F4F2F9823DF906100957338 /* PackageEtherCaptureDemo */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 2F4F2F8F23DF906100957338;
+			packageReferences = (
+				2F4F2FA223DF907D00957338 /* XCRemoteSwiftPackageReference "PackageEtherCapture" */,
+			);
 			productRefGroup = 2F4F2F9923DF906100957338 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +292,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F4F2FA223DF907D00957338 /* XCRemoteSwiftPackageReference "PackageEtherCapture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darrellroot/PackageEtherCapture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F4F2FA323DF907D00957338 /* PackageEtherCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F4F2FA223DF907D00957338 /* XCRemoteSwiftPackageReference "PackageEtherCapture" */;
+			productName = PackageEtherCapture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F4F2F9023DF906100957338 /* Project object */;
 }
