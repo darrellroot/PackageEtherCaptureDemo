@@ -12,7 +12,6 @@ import PackageEtherCapture
 let etherCapture: EtherCapture?
 do {
     etherCapture = try EtherCapture(interface: "en0", command: "icmp or icmp6") { frame in
-        //This closure is called every time a frame is captured.  The magic is in the frame data structure
         debugPrint(frame.description)
     }
 } catch {
