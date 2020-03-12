@@ -1,0 +1,9 @@
+PackageEtherCaptureDemo is a minimum-size project to demonstrate using PackageEtherCapture to capture packets.
+
+By hardcoding interface "en0" and command "icmp or icmp6" we capture packets on the commmand-line with less than 10 lines of source code.
+
+Related repositories:
+
+PackageEtherCapture
+etherdump-CLI (full feature CLI packet capture tool)
+Etherdump (full feature GUI packet capture tool)
